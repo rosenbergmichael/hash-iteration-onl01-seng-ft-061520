@@ -11,10 +11,13 @@ def happy_birthday(birthday_kids)
 end
 
 def age_appropriate_birthday(kids)
-  
-  
-  
-  
+  kids.each do |name, age|
+  if age > 12 
+  "You are too old for this."
+  else "Happy Birthday #{name}! You are now #{age} years old!"
+end 
+end 
+
 
 ### Change "xit" to "it" in the test block to enable
 #describe "#age_appropriate_birthday" do
